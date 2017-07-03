@@ -41,11 +41,11 @@ var UniformsLib = {
 
 	},
 
-	emissivemap: {
+	// emissivemap: {
 
-		emissiveMap: { value: null }
+	// 	emissiveMap: { value: null }
 
-	},
+	// },
 
 	bumpmap: {
 
@@ -69,23 +69,23 @@ var UniformsLib = {
 
 	},
 
-	roughnessmap: {
+	// roughnessmap: {
 
-		roughnessMap: { value: null }
+	// 	roughnessMap: { value: null }
 
-	},
+	// },
 
-	metalnessmap: {
+	// metalnessmap: {
 
-		metalnessMap: { value: null }
+	// 	metalnessMap: { value: null }
 
-	},
+	// },
 
-	gradientmap: {
+	// gradientmap: {
 
-		gradientMap: { value: null }
+	// 	gradientMap: { value: null }
 
-	},
+	// },
 
 	fog: {
 
@@ -96,71 +96,71 @@ var UniformsLib = {
 
 	},
 
-	lights: {
+	// lights: {
 
-		ambientLightColor: { value: [] },
+	// 	ambientLightColor: { value: [] },
 
-		directionalLights: { value: [], properties: {
-			direction: {},
-			color: {},
+	// 	directionalLights: { value: [], properties: {
+	// 		direction: {},
+	// 		color: {},
 
-			shadow: {},
-			shadowBias: {},
-			shadowRadius: {},
-			shadowMapSize: {}
-		} },
+	// 		shadow: {},
+	// 		shadowBias: {},
+	// 		shadowRadius: {},
+	// 		shadowMapSize: {}
+	// 	} },
 
-		directionalShadowMap: { value: [] },
-		directionalShadowMatrix: { value: [] },
+	// 	directionalShadowMap: { value: [] },
+	// 	directionalShadowMatrix: { value: [] },
 
-		spotLights: { value: [], properties: {
-			color: {},
-			position: {},
-			direction: {},
-			distance: {},
-			coneCos: {},
-			penumbraCos: {},
-			decay: {},
+	// 	spotLights: { value: [], properties: {
+	// 		color: {},
+	// 		position: {},
+	// 		direction: {},
+	// 		distance: {},
+	// 		coneCos: {},
+	// 		penumbraCos: {},
+	// 		decay: {},
 
-			shadow: {},
-			shadowBias: {},
-			shadowRadius: {},
-			shadowMapSize: {}
-		} },
+	// 		shadow: {},
+	// 		shadowBias: {},
+	// 		shadowRadius: {},
+	// 		shadowMapSize: {}
+	// 	} },
 
-		spotShadowMap: { value: [] },
-		spotShadowMatrix: { value: [] },
+	// 	spotShadowMap: { value: [] },
+	// 	spotShadowMatrix: { value: [] },
 
-		pointLights: { value: [], properties: {
-			color: {},
-			position: {},
-			decay: {},
-			distance: {},
+	// 	pointLights: { value: [], properties: {
+	// 		color: {},
+	// 		position: {},
+	// 		decay: {},
+	// 		distance: {},
 
-			shadow: {},
-			shadowBias: {},
-			shadowRadius: {},
-			shadowMapSize: {}
-		} },
+	// 		shadow: {},
+	// 		shadowBias: {},
+	// 		shadowRadius: {},
+	// 		shadowMapSize: {}
+	// 	} },
 
-		pointShadowMap: { value: [] },
-		pointShadowMatrix: { value: [] },
+	// 	pointShadowMap: { value: [] },
+	// 	pointShadowMatrix: { value: [] },
 
-		hemisphereLights: { value: [], properties: {
-			direction: {},
-			skyColor: {},
-			groundColor: {}
-		} },
+	// 	hemisphereLights: { value: [], properties: {
+	// 		direction: {},
+	// 		skyColor: {},
+	// 		groundColor: {}
+	// 	} },
 
-		// TODO (abelnation): RectAreaLight BRDF data needs to be moved from example to main src
-		rectAreaLights: { value: [], properties: {
-			color: {},
-			position: {},
-			width: {},
-			height: {}
-		} }
+	// 	// TODO (abelnation): RectAreaLight BRDF data needs to be moved from example to main src
+	// 	rectAreaLights: { value: [], properties: {
+	// 		color: {},
+	// 		position: {},
+	// 		width: {},
+	// 		height: {}
+	// 	} }
 
-	},
+	// },
 
 	points: {
 

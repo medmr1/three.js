@@ -26,76 +26,76 @@ var ShaderLib = {
 
 	},
 
-	lambert: {
+	// lambert: {
 
-		uniforms: UniformsUtils.merge( [
-			UniformsLib.common,
-			UniformsLib.aomap,
-			UniformsLib.lightmap,
-			UniformsLib.emissivemap,
-			UniformsLib.fog,
-			UniformsLib.lights,
-			{
-				emissive: { value: new Color( 0x000000 ) }
-			}
-		] ),
+	// 	uniforms: UniformsUtils.merge( [
+	// 		UniformsLib.common,
+	// 		UniformsLib.aomap,
+	// 		UniformsLib.lightmap,
+	// 		UniformsLib.emissivemap,
+	// 		UniformsLib.fog,
+	// 		UniformsLib.lights,
+	// 		{
+	// 			emissive: { value: new Color( 0x000000 ) }
+	// 		}
+	// 	] ),
 
-		vertexShader: ShaderChunk.meshlambert_vert,
-		fragmentShader: ShaderChunk.meshlambert_frag
+	// 	vertexShader: ShaderChunk.meshlambert_vert,
+	// 	fragmentShader: ShaderChunk.meshlambert_frag
 
-	},
+	// },
 
-	phong: {
+	// phong: {
 
-		uniforms: UniformsUtils.merge( [
-			UniformsLib.common,
-			UniformsLib.aomap,
-			UniformsLib.lightmap,
-			UniformsLib.emissivemap,
-			UniformsLib.bumpmap,
-			UniformsLib.normalmap,
-			UniformsLib.displacementmap,
-			UniformsLib.gradientmap,
-			UniformsLib.fog,
-			UniformsLib.lights,
-			{
-				emissive: { value: new Color( 0x000000 ) },
-				specular: { value: new Color( 0x111111 ) },
-				shininess: { value: 30 }
-			}
-		] ),
+	// 	uniforms: UniformsUtils.merge( [
+	// 		UniformsLib.common,
+	// 		UniformsLib.aomap,
+	// 		UniformsLib.lightmap,
+	// 		UniformsLib.emissivemap,
+	// 		UniformsLib.bumpmap,
+	// 		UniformsLib.normalmap,
+	// 		UniformsLib.displacementmap,
+	// 		UniformsLib.gradientmap,
+	// 		UniformsLib.fog,
+	// 		UniformsLib.lights,
+	// 		{
+	// 			emissive: { value: new Color( 0x000000 ) },
+	// 			specular: { value: new Color( 0x111111 ) },
+	// 			shininess: { value: 30 }
+	// 		}
+	// 	] ),
 
-		vertexShader: ShaderChunk.meshphong_vert,
-		fragmentShader: ShaderChunk.meshphong_frag
+	// 	vertexShader: ShaderChunk.meshphong_vert,
+	// 	fragmentShader: ShaderChunk.meshphong_frag
 
-	},
+	// },
 
-	standard: {
+	// standard: {
 
-		uniforms: UniformsUtils.merge( [
-			UniformsLib.common,
-			UniformsLib.aomap,
-			UniformsLib.lightmap,
-			UniformsLib.emissivemap,
-			UniformsLib.bumpmap,
-			UniformsLib.normalmap,
-			UniformsLib.displacementmap,
-			UniformsLib.roughnessmap,
-			UniformsLib.metalnessmap,
-			UniformsLib.fog,
-			UniformsLib.lights,
-			{
-				emissive: { value: new Color( 0x000000 ) },
-				roughness: { value: 0.5 },
-				metalness: { value: 0.5 },
-				envMapIntensity: { value: 1 } // temporary
-			}
-		] ),
+	// 	uniforms: UniformsUtils.merge( [
+	// 		UniformsLib.common,
+	// 		UniformsLib.aomap,
+	// 		UniformsLib.lightmap,
+	// 		UniformsLib.emissivemap,
+	// 		UniformsLib.bumpmap,
+	// 		UniformsLib.normalmap,
+	// 		UniformsLib.displacementmap,
+	// 		UniformsLib.roughnessmap,
+	// 		UniformsLib.metalnessmap,
+	// 		UniformsLib.fog,
+	// 		UniformsLib.lights,
+	// 		{
+	// 			emissive: { value: new Color( 0x000000 ) },
+	// 			roughness: { value: 0.5 },
+	// 			metalness: { value: 0.5 },
+	// 			envMapIntensity: { value: 1 } // temporary
+	// 		}
+	// 	] ),
 
-		vertexShader: ShaderChunk.meshphysical_vert,
-		fragmentShader: ShaderChunk.meshphysical_frag
+	// 	vertexShader: ShaderChunk.meshphysical_vert,
+	// 	fragmentShader: ShaderChunk.meshphysical_frag
 
-	},
+	// },
 
 	points: {
 
@@ -109,22 +109,22 @@ var ShaderLib = {
 
 	},
 
-	dashed: {
+	// dashed: {
 
-		uniforms: UniformsUtils.merge( [
-			UniformsLib.common,
-			UniformsLib.fog,
-			{
-				scale: { value: 1 },
-				dashSize: { value: 1 },
-				totalSize: { value: 2 }
-			}
-		] ),
+	// 	uniforms: UniformsUtils.merge( [
+	// 		UniformsLib.common,
+	// 		UniformsLib.fog,
+	// 		{
+	// 			scale: { value: 1 },
+	// 			dashSize: { value: 1 },
+	// 			totalSize: { value: 2 }
+	// 		}
+	// 	] ),
 
-		vertexShader: ShaderChunk.linedashed_vert,
-		fragmentShader: ShaderChunk.linedashed_frag
+	// 	vertexShader: ShaderChunk.linedashed_vert,
+	// 	fragmentShader: ShaderChunk.linedashed_frag
 
-	},
+	// },
 
 	depth: {
 
@@ -205,20 +205,20 @@ var ShaderLib = {
 
 };
 
-ShaderLib.physical = {
+// ShaderLib.physical = {
 
-	uniforms: UniformsUtils.merge( [
-		ShaderLib.standard.uniforms,
-		{
-			clearCoat: { value: 0 },
-			clearCoatRoughness: { value: 0 }
-		}
-	] ),
+// 	uniforms: UniformsUtils.merge( [
+// 		ShaderLib.standard.uniforms,
+// 		{
+// 			clearCoat: { value: 0 },
+// 			clearCoatRoughness: { value: 0 }
+// 		}
+// 	] ),
 
-	vertexShader: ShaderChunk.meshphysical_vert,
-	fragmentShader: ShaderChunk.meshphysical_frag
+// 	vertexShader: ShaderChunk.meshphysical_vert,
+// 	fragmentShader: ShaderChunk.meshphysical_frag
 
-};
+// };
 
 
 export { ShaderLib };

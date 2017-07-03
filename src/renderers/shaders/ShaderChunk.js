@@ -91,18 +91,18 @@ import depth_frag from './ShaderLib/depth_frag.glsl';
 import depth_vert from './ShaderLib/depth_vert.glsl';
 import distanceRGBA_frag from './ShaderLib/distanceRGBA_frag.glsl';
 import distanceRGBA_vert from './ShaderLib/distanceRGBA_vert.glsl';
-import equirect_frag from './ShaderLib/equirect_frag.glsl';
-import equirect_vert from './ShaderLib/equirect_vert.glsl';
-import linedashed_frag from './ShaderLib/linedashed_frag.glsl';
-import linedashed_vert from './ShaderLib/linedashed_vert.glsl';
+// import equirect_frag from './ShaderLib/equirect_frag.glsl';
+// import equirect_vert from './ShaderLib/equirect_vert.glsl';
+// import linedashed_frag from './ShaderLib/linedashed_frag.glsl';
+// import linedashed_vert from './ShaderLib/linedashed_vert.glsl';
 import meshbasic_frag from './ShaderLib/meshbasic_frag.glsl';
 import meshbasic_vert from './ShaderLib/meshbasic_vert.glsl';
-import meshlambert_frag from './ShaderLib/meshlambert_frag.glsl';
-import meshlambert_vert from './ShaderLib/meshlambert_vert.glsl';
-import meshphong_frag from './ShaderLib/meshphong_frag.glsl';
-import meshphong_vert from './ShaderLib/meshphong_vert.glsl';
-import meshphysical_frag from './ShaderLib/meshphysical_frag.glsl';
-import meshphysical_vert from './ShaderLib/meshphysical_vert.glsl';
+// import meshlambert_frag from './ShaderLib/meshlambert_frag.glsl';
+// import meshlambert_vert from './ShaderLib/meshlambert_vert.glsl';
+// import meshphong_frag from './ShaderLib/meshphong_frag.glsl';
+// import meshphong_vert from './ShaderLib/meshphong_vert.glsl';
+// import meshphysical_frag from './ShaderLib/meshphysical_frag.glsl';
+// import meshphysical_vert from './ShaderLib/meshphysical_vert.glsl';
 import normal_frag from './ShaderLib/normal_frag.glsl';
 import normal_vert from './ShaderLib/normal_vert.glsl';
 import points_frag from './ShaderLib/points_frag.glsl';
@@ -204,18 +204,18 @@ export var ShaderChunk = {
 	depth_vert: depth_vert,
 	distanceRGBA_frag: distanceRGBA_frag,
 	distanceRGBA_vert: distanceRGBA_vert,
-	equirect_frag: equirect_frag,
-	equirect_vert: equirect_vert,
-	linedashed_frag: linedashed_frag,
-	linedashed_vert: linedashed_vert,
+	// equirect_frag: equirect_frag,
+	// equirect_vert: equirect_vert,
+	// linedashed_frag: linedashed_frag,
+	// linedashed_vert: linedashed_vert,
 	meshbasic_frag: meshbasic_frag,
 	meshbasic_vert: meshbasic_vert,
-	meshlambert_frag: meshlambert_frag,
-	meshlambert_vert: meshlambert_vert,
-	meshphong_frag: meshphong_frag,
-	meshphong_vert: meshphong_vert,
-	meshphysical_frag: meshphysical_frag,
-	meshphysical_vert: meshphysical_vert,
+	// meshlambert_frag: meshlambert_frag,
+	// meshlambert_vert: meshlambert_vert,
+	// meshphong_frag: meshphong_frag,
+	// meshphong_vert: meshphong_vert,
+	// meshphysical_frag: meshphysical_frag,
+	// meshphysical_vert: meshphysical_vert,
 	normal_frag: normal_frag,
 	normal_vert: normal_vert,
 	points_frag: points_frag,
