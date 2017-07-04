@@ -181,131 +181,131 @@ Object.assign( EventDispatcher.prototype, {
 
 } );
 
-const REVISION = '87dev';
-const MOUSE = { LEFT: 0, MIDDLE: 1, RIGHT: 2 };
-const CullFaceNone = 0;
-const CullFaceBack = 1;
-const CullFaceFront = 2;
-const CullFaceFrontBack = 3;
-const FrontFaceDirectionCW = 0;
-const FrontFaceDirectionCCW = 1;
-const BasicShadowMap = 0;
-const PCFShadowMap = 1;
-const PCFSoftShadowMap = 2;
-const FrontSide = 0;
-const BackSide = 1;
-const DoubleSide = 2;
-const FlatShading = 1;
-const SmoothShading = 2;
-const NoColors = 0;
-const FaceColors = 1;
-const VertexColors = 2;
-const NoBlending = 0;
-const NormalBlending = 1;
-const AdditiveBlending = 2;
-const SubtractiveBlending = 3;
-const MultiplyBlending = 4;
-const CustomBlending = 5;
-const AddEquation = 100;
-const SubtractEquation = 101;
-const ReverseSubtractEquation = 102;
-const MinEquation = 103;
-const MaxEquation = 104;
-const ZeroFactor = 200;
-const OneFactor = 201;
-const SrcColorFactor = 202;
-const OneMinusSrcColorFactor = 203;
-const SrcAlphaFactor = 204;
-const OneMinusSrcAlphaFactor = 205;
-const DstAlphaFactor = 206;
-const OneMinusDstAlphaFactor = 207;
-const DstColorFactor = 208;
-const OneMinusDstColorFactor = 209;
-const SrcAlphaSaturateFactor = 210;
-const NeverDepth = 0;
-const AlwaysDepth = 1;
-const LessDepth = 2;
-const LessEqualDepth = 3;
-const EqualDepth = 4;
-const GreaterEqualDepth = 5;
-const GreaterDepth = 6;
-const NotEqualDepth = 7;
-const MultiplyOperation = 0;
-const MixOperation = 1;
-const AddOperation = 2;
-const NoToneMapping = 0;
-const LinearToneMapping = 1;
-const ReinhardToneMapping = 2;
-const Uncharted2ToneMapping = 3;
-const CineonToneMapping = 4;
-const UVMapping = 300;
-const CubeReflectionMapping = 301;
-const CubeRefractionMapping = 302;
-const EquirectangularReflectionMapping = 303;
-const EquirectangularRefractionMapping = 304;
-const SphericalReflectionMapping = 305;
-const CubeUVReflectionMapping = 306;
-const CubeUVRefractionMapping = 307;
-const RepeatWrapping = 1000;
-const ClampToEdgeWrapping = 1001;
-const MirroredRepeatWrapping = 1002;
-const NearestFilter = 1003;
-const NearestMipMapNearestFilter = 1004;
-const NearestMipMapLinearFilter = 1005;
-const LinearFilter = 1006;
-const LinearMipMapNearestFilter = 1007;
-const LinearMipMapLinearFilter = 1008;
-const UnsignedByteType = 1009;
-const ByteType = 1010;
-const ShortType = 1011;
-const UnsignedShortType = 1012;
-const IntType = 1013;
-const UnsignedIntType = 1014;
-const FloatType = 1015;
-const HalfFloatType = 1016;
-const UnsignedShort4444Type = 1017;
-const UnsignedShort5551Type = 1018;
-const UnsignedShort565Type = 1019;
-const UnsignedInt248Type = 1020;
-const AlphaFormat = 1021;
-const RGBFormat = 1022;
-const RGBAFormat = 1023;
-const LuminanceFormat = 1024;
-const LuminanceAlphaFormat = 1025;
-const RGBEFormat = RGBAFormat;
-const DepthFormat = 1026;
-const DepthStencilFormat = 1027;
-const RGB_S3TC_DXT1_Format = 2001;
-const RGBA_S3TC_DXT1_Format = 2002;
-const RGBA_S3TC_DXT3_Format = 2003;
-const RGBA_S3TC_DXT5_Format = 2004;
-const RGB_PVRTC_4BPPV1_Format = 2100;
-const RGB_PVRTC_2BPPV1_Format = 2101;
-const RGBA_PVRTC_4BPPV1_Format = 2102;
-const RGBA_PVRTC_2BPPV1_Format = 2103;
-const RGB_ETC1_Format = 2151;
-const LoopOnce = 2200;
-const LoopRepeat = 2201;
-const LoopPingPong = 2202;
-const InterpolateDiscrete = 2300;
-const InterpolateLinear = 2301;
-const InterpolateSmooth = 2302;
-const ZeroCurvatureEnding = 2400;
-const ZeroSlopeEnding = 2401;
-const WrapAroundEnding = 2402;
-const TrianglesDrawMode = 0;
-const TriangleStripDrawMode = 1;
-const TriangleFanDrawMode = 2;
-const LinearEncoding = 3000;
-const sRGBEncoding = 3001;
-const GammaEncoding = 3007;
-const RGBEEncoding = 3002;
-const LogLuvEncoding = 3003;
-const RGBM7Encoding = 3004;
-const RGBM16Encoding = 3005;
-const RGBDEncoding = 3006;
-const BasicDepthPacking = 3200;
-const RGBADepthPacking = 3201;
+var REVISION = '87dev';
+var MOUSE = { LEFT: 0, MIDDLE: 1, RIGHT: 2 };
+var CullFaceNone = 0;
+var CullFaceBack = 1;
+var CullFaceFront = 2;
+var CullFaceFrontBack = 3;
+var FrontFaceDirectionCW = 0;
+var FrontFaceDirectionCCW = 1;
+var BasicShadowMap = 0;
+var PCFShadowMap = 1;
+var PCFSoftShadowMap = 2;
+var FrontSide = 0;
+var BackSide = 1;
+var DoubleSide = 2;
+var FlatShading = 1;
+var SmoothShading = 2;
+var NoColors = 0;
+var FaceColors = 1;
+var VertexColors = 2;
+var NoBlending = 0;
+var NormalBlending = 1;
+var AdditiveBlending = 2;
+var SubtractiveBlending = 3;
+var MultiplyBlending = 4;
+var CustomBlending = 5;
+var AddEquation = 100;
+var SubtractEquation = 101;
+var ReverseSubtractEquation = 102;
+var MinEquation = 103;
+var MaxEquation = 104;
+var ZeroFactor = 200;
+var OneFactor = 201;
+var SrcColorFactor = 202;
+var OneMinusSrcColorFactor = 203;
+var SrcAlphaFactor = 204;
+var OneMinusSrcAlphaFactor = 205;
+var DstAlphaFactor = 206;
+var OneMinusDstAlphaFactor = 207;
+var DstColorFactor = 208;
+var OneMinusDstColorFactor = 209;
+var SrcAlphaSaturateFactor = 210;
+var NeverDepth = 0;
+var AlwaysDepth = 1;
+var LessDepth = 2;
+var LessEqualDepth = 3;
+var EqualDepth = 4;
+var GreaterEqualDepth = 5;
+var GreaterDepth = 6;
+var NotEqualDepth = 7;
+var MultiplyOperation = 0;
+var MixOperation = 1;
+var AddOperation = 2;
+var NoToneMapping = 0;
+var LinearToneMapping = 1;
+var ReinhardToneMapping = 2;
+var Uncharted2ToneMapping = 3;
+var CineonToneMapping = 4;
+var UVMapping = 300;
+var CubeReflectionMapping = 301;
+var CubeRefractionMapping = 302;
+var EquirectangularReflectionMapping = 303;
+var EquirectangularRefractionMapping = 304;
+var SphericalReflectionMapping = 305;
+var CubeUVReflectionMapping = 306;
+var CubeUVRefractionMapping = 307;
+var RepeatWrapping = 1000;
+var ClampToEdgeWrapping = 1001;
+var MirroredRepeatWrapping = 1002;
+var NearestFilter = 1003;
+var NearestMipMapNearestFilter = 1004;
+var NearestMipMapLinearFilter = 1005;
+var LinearFilter = 1006;
+var LinearMipMapNearestFilter = 1007;
+var LinearMipMapLinearFilter = 1008;
+var UnsignedByteType = 1009;
+var ByteType = 1010;
+var ShortType = 1011;
+var UnsignedShortType = 1012;
+var IntType = 1013;
+var UnsignedIntType = 1014;
+var FloatType = 1015;
+var HalfFloatType = 1016;
+var UnsignedShort4444Type = 1017;
+var UnsignedShort5551Type = 1018;
+var UnsignedShort565Type = 1019;
+var UnsignedInt248Type = 1020;
+var AlphaFormat = 1021;
+var RGBFormat = 1022;
+var RGBAFormat = 1023;
+var LuminanceFormat = 1024;
+var LuminanceAlphaFormat = 1025;
+var RGBEFormat = RGBAFormat;
+var DepthFormat = 1026;
+var DepthStencilFormat = 1027;
+var RGB_S3TC_DXT1_Format = 2001;
+var RGBA_S3TC_DXT1_Format = 2002;
+var RGBA_S3TC_DXT3_Format = 2003;
+var RGBA_S3TC_DXT5_Format = 2004;
+var RGB_PVRTC_4BPPV1_Format = 2100;
+var RGB_PVRTC_2BPPV1_Format = 2101;
+var RGBA_PVRTC_4BPPV1_Format = 2102;
+var RGBA_PVRTC_2BPPV1_Format = 2103;
+var RGB_ETC1_Format = 2151;
+var LoopOnce = 2200;
+var LoopRepeat = 2201;
+var LoopPingPong = 2202;
+var InterpolateDiscrete = 2300;
+var InterpolateLinear = 2301;
+var InterpolateSmooth = 2302;
+var ZeroCurvatureEnding = 2400;
+var ZeroSlopeEnding = 2401;
+var WrapAroundEnding = 2402;
+var TrianglesDrawMode = 0;
+var TriangleStripDrawMode = 1;
+var TriangleFanDrawMode = 2;
+var LinearEncoding = 3000;
+var sRGBEncoding = 3001;
+var GammaEncoding = 3007;
+var RGBEEncoding = 3002;
+var LogLuvEncoding = 3003;
+var RGBM7Encoding = 3004;
+var RGBM16Encoding = 3005;
+var RGBDEncoding = 3006;
+var BasicDepthPacking = 3200;
+var RGBADepthPacking = 3201;
 
 /**
  * @author alteredq / http://alteredqualia.com/
@@ -17186,6 +17186,8 @@ function unrollLoops( string ) {
 
 function WebGLProgram( renderer, code, material, shader, parameters ) {
 
+	//console.log( "WebGLProgram", renderer, code, material, shader, parameters );
+
 	var gl = renderer.context;
 
 	var extensions = material.extensions;
@@ -17683,20 +17685,6 @@ function WebGLPrograms( renderer, capabilities ) {
 		PointsMaterial: 'points'
 	};
 
-	var parameterNames = [
-		"precision", "supportsVertexTextures", "map", "mapEncoding", "envMap", "envMapMode", "envMapEncoding",
-		"lightMap", "aoMap", "emissiveMap", "emissiveMapEncoding", "bumpMap", "normalMap", "displacementMap", "specularMap",
-		"roughnessMap", "metalnessMap", "gradientMap",
-		"alphaMap", "combine", "vertexColors", "fog", "useFog", "fogExp",
-		"flatShading", "sizeAttenuation", "logarithmicDepthBuffer", "skinning",
-		"maxBones", "useVertexTexture", "morphTargets", "morphNormals",
-		"maxMorphTargets", "maxMorphNormals", "premultipliedAlpha",
-		"numDirLights", "numPointLights", "numSpotLights", "numHemiLights", "numRectAreaLights",
-		"shadowMapEnabled", "shadowMapType", "toneMapping", 'physicallyCorrectLights',
-		"alphaTest", "doubleSided", "flipSided", "numClippingPlanes", "numClipIntersection", "depthPacking", "dithering"
-	];
-
-
 	function allocateBones( object ) {
 
 		var skeleton = object.skeleton;
@@ -17862,6 +17850,9 @@ function WebGLPrograms( renderer, capabilities ) {
 			depthPacking: ( material.depthPacking !== undefined ) ? material.depthPacking : false
 
 		};
+		
+		//console.log( "MATERIAL: ", material );
+		//console.log( "PARAMS: ", parameters );
 
 		return parameters;
 
@@ -17893,15 +17884,63 @@ function WebGLPrograms( renderer, capabilities ) {
 
 		}
 
-		for ( var i = 0; i < parameterNames.length; i ++ ) {
-
-			array.push( parameters[ parameterNames[ i ] ] );
-
-		}
+		array.push( parameters.precision );
+		array.push( parameters.supportsVertexTextures );
+		array.push( parameters.map );
+		array.push( parameters.mapEncoding );
+		array.push( parameters.envMap );
+		array.push( parameters.envMapMode );
+		array.push( parameters.envMapEncoding );
+		array.push( parameters.lightMap );
+		array.push( parameters.aoMap );
+		array.push( parameters.emissiveMap );
+		array.push( parameters.emissiveMapEncoding );
+		array.push( parameters.bumpMap );
+		array.push( parameters.normalMap );
+		array.push( parameters.displacementMap );
+		array.push( parameters.specularMap );
+		array.push( parameters.roughnessMap );
+		array.push( parameters.metalnessMap );
+		array.push( parameters.gradientMap );
+		array.push( parameters.alphaMap );
+		array.push( parameters.combine );
+		array.push( parameters.vertexColors );
+		array.push( parameters.fog );
+		array.push( parameters.useFog );
+		array.push( parameters.fogExp );
+		array.push( parameters.flatShading );
+		array.push( parameters.sizeAttenuation );
+		array.push( parameters.logarithmicDepthBuffer );
+		array.push( parameters.skinning );
+		array.push( parameters.maxBones );
+		array.push( parameters.useVertexTexture );
+		array.push( parameters.morphTargets );
+		array.push( parameters.morphNormals );
+		array.push( parameters.maxMorphTargets );
+		array.push( parameters.maxMorphNormals );
+		array.push( parameters.premultipliedAlpha );
+		array.push( parameters.numDirLights );
+		array.push( parameters.numPointLights );
+		array.push( parameters.numSpotLights );
+		array.push( parameters.numHemiLights );
+		array.push( parameters.numRectAreaLights );
+		array.push( parameters.shadowMapEnabled );
+		array.push( parameters.shadowMapType );
+		array.push( parameters.toneMapping );
+		array.push( parameters.physicallyCorrectLights );
+		array.push( parameters.alphaTest );
+		array.push( parameters.doubleSided );
+		array.push( parameters.flipSided );
+		array.push( parameters.numClippingPlanes );
+		array.push( parameters.numClipIntersection );
+		array.push( parameters.depthPacking );
+		array.push( parameters.dithering );
 
 		array.push( material.onBeforeCompile.toString() );
 
 		array.push( renderer.gammaOutput );
+
+		//console.log( "CODE:", array.join() );
 
 		return array.join();
 
@@ -20310,7 +20349,7 @@ function WebGLClipping() {
 
 function WebGLRenderer( parameters ) {
 
-	console.log( 'THREE.WebGLRenderer', REVISION );
+	//console.log( 'THREE.WebGLRenderer', REVISION );
 
 	parameters = parameters || {};
 
@@ -20323,6 +20362,8 @@ function WebGLRenderer( parameters ) {
 		_antialias = parameters.antialias !== undefined ? parameters.antialias : false,
 		_premultipliedAlpha = parameters.premultipliedAlpha !== undefined ? parameters.premultipliedAlpha : true,
 		_preserveDrawingBuffer = parameters.preserveDrawingBuffer !== undefined ? parameters.preserveDrawingBuffer : false;
+
+	// console.log( "parameters:", parameters );
 
 	var lights = [];
 
@@ -20493,6 +20534,8 @@ function WebGLRenderer( parameters ) {
 			premultipliedAlpha: _premultipliedAlpha,
 			preserveDrawingBuffer: _preserveDrawingBuffer
 		};
+
+		//console.log( "contextAttributes", contextAttributes );
 
 		_gl = _context || _canvas.getContext( 'webgl', contextAttributes ) || _canvas.getContext( 'experimental-webgl', contextAttributes );
 
@@ -20807,7 +20850,7 @@ function WebGLRenderer( parameters ) {
 
 		event.preventDefault();
 
-		console.log( 'THREE.WebGLRenderer: Context Lost.' );
+		//console.log( 'THREE.WebGLRenderer: Context Lost.' );
 
 		_isContextLost = true;
 
@@ -20815,7 +20858,7 @@ function WebGLRenderer( parameters ) {
 
 	function onContextRestore( event ) {
 
-		console.log( 'THREE.WebGLRenderer: Context Restored.' );
+		//console.log( 'THREE.WebGLRenderer: Context Restored.' );
 
 		_isContextLost = false;
 
@@ -21190,7 +21233,7 @@ function WebGLRenderer( parameters ) {
 
 			if ( extensions.get( 'ANGLE_instanced_arrays' ) === null ) {
 
-				console.error( 'THREE.WebGLRenderer.setupVertexAttributes: using THREE.InstancedBufferGeometry but hardware does not support extension ANGLE_instanced_arrays.' );
+				console.error( 'ANGLE_instanced_arrays'+' not supported' );
 				return;
 
 			}

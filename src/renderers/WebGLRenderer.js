@@ -41,7 +41,7 @@ import { Vector4 } from '../math/Vector4';
 
 function WebGLRenderer( parameters ) {
 
-	console.log( 'THREE.WebGLRenderer', REVISION );
+	//console.log( 'THREE.WebGLRenderer', REVISION );
 
 	parameters = parameters || {};
 
@@ -54,6 +54,8 @@ function WebGLRenderer( parameters ) {
 		_antialias = parameters.antialias !== undefined ? parameters.antialias : false,
 		_premultipliedAlpha = parameters.premultipliedAlpha !== undefined ? parameters.premultipliedAlpha : true,
 		_preserveDrawingBuffer = parameters.preserveDrawingBuffer !== undefined ? parameters.preserveDrawingBuffer : false;
+
+	// console.log( "parameters:", parameters );
 
 	var lights = [];
 
@@ -224,6 +226,8 @@ function WebGLRenderer( parameters ) {
 			premultipliedAlpha: _premultipliedAlpha,
 			preserveDrawingBuffer: _preserveDrawingBuffer
 		};
+
+		//console.log( "contextAttributes", contextAttributes );
 
 		_gl = _context || _canvas.getContext( 'webgl', contextAttributes ) || _canvas.getContext( 'experimental-webgl', contextAttributes );
 
@@ -538,7 +542,7 @@ function WebGLRenderer( parameters ) {
 
 		event.preventDefault();
 
-		console.log( 'THREE.WebGLRenderer: Context Lost.' );
+		//console.log( 'THREE.WebGLRenderer: Context Lost.' );
 
 		_isContextLost = true;
 
@@ -546,7 +550,7 @@ function WebGLRenderer( parameters ) {
 
 	function onContextRestore( event ) {
 
-		console.log( 'THREE.WebGLRenderer: Context Restored.' );
+		//console.log( 'THREE.WebGLRenderer: Context Restored.' );
 
 		_isContextLost = false;
 
@@ -921,7 +925,7 @@ function WebGLRenderer( parameters ) {
 
 			if ( extensions.get( 'ANGLE_instanced_arrays' ) === null ) {
 
-				console.error( 'THREE.WebGLRenderer.setupVertexAttributes: using THREE.InstancedBufferGeometry but hardware does not support extension ANGLE_instanced_arrays.' );
+				console.error( 'ANGLE_instanced_arrays'+' not supported' );
 				return;
 
 			}

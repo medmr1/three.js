@@ -23,20 +23,6 @@ function WebGLPrograms( renderer, capabilities ) {
 		PointsMaterial: 'points'
 	};
 
-	var parameterNames = [
-		"precision", "supportsVertexTextures", "map", "mapEncoding", "envMap", "envMapMode", "envMapEncoding",
-		"lightMap", "aoMap", "emissiveMap", "emissiveMapEncoding", "bumpMap", "normalMap", "displacementMap", "specularMap",
-		"roughnessMap", "metalnessMap", "gradientMap",
-		"alphaMap", "combine", "vertexColors", "fog", "useFog", "fogExp",
-		"flatShading", "sizeAttenuation", "logarithmicDepthBuffer", "skinning",
-		"maxBones", "useVertexTexture", "morphTargets", "morphNormals",
-		"maxMorphTargets", "maxMorphNormals", "premultipliedAlpha",
-		"numDirLights", "numPointLights", "numSpotLights", "numHemiLights", "numRectAreaLights",
-		"shadowMapEnabled", "shadowMapType", "toneMapping", 'physicallyCorrectLights',
-		"alphaTest", "doubleSided", "flipSided", "numClippingPlanes", "numClipIntersection", "depthPacking", "dithering"
-	];
-
-
 	function allocateBones( object ) {
 
 		var skeleton = object.skeleton;
@@ -202,6 +188,9 @@ function WebGLPrograms( renderer, capabilities ) {
 			depthPacking: ( material.depthPacking !== undefined ) ? material.depthPacking : false
 
 		};
+		
+		//console.log( "MATERIAL: ", material );
+		//console.log( "PARAMS: ", parameters );
 
 		return parameters;
 
@@ -233,15 +222,63 @@ function WebGLPrograms( renderer, capabilities ) {
 
 		}
 
-		for ( var i = 0; i < parameterNames.length; i ++ ) {
-
-			array.push( parameters[ parameterNames[ i ] ] );
-
-		}
+		array.push( parameters.precision );
+		array.push( parameters.supportsVertexTextures );
+		array.push( parameters.map );
+		array.push( parameters.mapEncoding );
+		array.push( parameters.envMap );
+		array.push( parameters.envMapMode );
+		array.push( parameters.envMapEncoding );
+		array.push( parameters.lightMap );
+		array.push( parameters.aoMap );
+		array.push( parameters.emissiveMap );
+		array.push( parameters.emissiveMapEncoding );
+		array.push( parameters.bumpMap );
+		array.push( parameters.normalMap );
+		array.push( parameters.displacementMap );
+		array.push( parameters.specularMap );
+		array.push( parameters.roughnessMap );
+		array.push( parameters.metalnessMap );
+		array.push( parameters.gradientMap );
+		array.push( parameters.alphaMap );
+		array.push( parameters.combine );
+		array.push( parameters.vertexColors );
+		array.push( parameters.fog );
+		array.push( parameters.useFog );
+		array.push( parameters.fogExp );
+		array.push( parameters.flatShading );
+		array.push( parameters.sizeAttenuation );
+		array.push( parameters.logarithmicDepthBuffer );
+		array.push( parameters.skinning );
+		array.push( parameters.maxBones );
+		array.push( parameters.useVertexTexture );
+		array.push( parameters.morphTargets );
+		array.push( parameters.morphNormals );
+		array.push( parameters.maxMorphTargets );
+		array.push( parameters.maxMorphNormals );
+		array.push( parameters.premultipliedAlpha );
+		array.push( parameters.numDirLights );
+		array.push( parameters.numPointLights );
+		array.push( parameters.numSpotLights );
+		array.push( parameters.numHemiLights );
+		array.push( parameters.numRectAreaLights );
+		array.push( parameters.shadowMapEnabled );
+		array.push( parameters.shadowMapType );
+		array.push( parameters.toneMapping );
+		array.push( parameters.physicallyCorrectLights );
+		array.push( parameters.alphaTest );
+		array.push( parameters.doubleSided );
+		array.push( parameters.flipSided );
+		array.push( parameters.numClippingPlanes );
+		array.push( parameters.numClipIntersection );
+		array.push( parameters.depthPacking );
+		array.push( parameters.dithering );
 
 		array.push( material.onBeforeCompile.toString() );
 
 		array.push( renderer.gammaOutput );
+
+		//console.log( "CODE:", array.join() );
 
 		return array.join();
 
